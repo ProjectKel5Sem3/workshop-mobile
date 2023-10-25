@@ -8,12 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
     private EditText username;
     private EditText password;
     private CardView loginButton;
+    private TextView signupButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,8 @@ public class Login extends AppCompatActivity {
             username = findViewById(R.id.emaillogin1);
             password = findViewById(R.id.password1);
             loginButton = findViewById(R.id.buttonlogin1);
+            signupButton = findViewById(R.id.signuptext1);
+
 
             loginButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -41,6 +45,14 @@ public class Login extends AppCompatActivity {
                     } else {
                         Toast.makeText(getApplicationContext(), "Login Failed!", Toast.LENGTH_SHORT).show();
                     }
+                }
+            });
+
+            signupButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Login.this, Register.class);
+                    startActivity(intent);
                 }
             });
         }
