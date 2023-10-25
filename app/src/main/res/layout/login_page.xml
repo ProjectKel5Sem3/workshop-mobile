@@ -18,10 +18,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppinssemibold"
-            android:paddingTop="220dp"
             android:text="Login"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:paddingTop="220dp"
+            android:fontFamily="@font/poppinssemibold"/>
 
         <ImageView
             android:id="@+id/imglogo1"
@@ -37,11 +37,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
         android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="10dp">
+        app:cardElevation="10dp"
+        app:cardCornerRadius="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -53,45 +53,45 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Email and Password"
                 android:layout_marginStart="20dp"
                 android:fontFamily="@font/poppinssemibold"
-                android:text="Email and Password"
-                android:textColor="@color/lightbrown"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/lightbrown"/>
 
             <EditText
                 android:id="@+id/emaillogin1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
                 android:background="@drawable/custom_edittext"
+                android:layout_marginTop="2dp"
+                android:padding="8dp"
                 android:drawableLeft="@drawable/personicon"
-                android:fontFamily="@font/poppinsmedium"
                 android:hint="Username"
-                android:padding="8dp" />
+                android:fontFamily="@font/poppinsmedium"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
-                android:layout_marginLeft="10dp"
+                android:background="@color/lightbrown"
                 android:layout_marginRight="10dp"
-                android:background="@color/lightbrown" />
+                android:layout_marginLeft="10dp"/>
 
             <EditText
                 android:id="@+id/password1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:background="@drawable/custom_edittext"
-                android:drawableLeft="@drawable/lockicon"
-                android:drawablePadding="10dp"
-                android:fontFamily="@font/poppinsmedium"
-                android:hint="Password"
+                android:layout_marginTop="5dp"
                 android:inputType="textPassword"
+                android:hint="Password"
+                android:fontFamily="@font/poppinsmedium"
                 android:paddingLeft="12dp"
-                android:paddingTop="8dp"
                 android:paddingRight="8dp"
-                android:paddingBottom="8dp" />
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/lockicon"/>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -101,102 +101,93 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="280dp"
-        android:fontFamily="@font/poppinsregular"
         android:text="Forgot password?"
+        android:textSize="10sp"
         android:textColor="@color/semidarkbrown"
-        android:textSize="10sp" />
+        android:fontFamily="@font/poppinsregular"/>
 
     <LinearLayout
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:orientation="horizontal"
+        android:paddingRight="30dp"
         android:paddingLeft="30dp"
-        android:paddingRight="30dp">
-
+        android:orientation="horizontal">
         <CheckBox
             android:id="@+id/checkbox1"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:buttonTint="@color/semidarkbrown"
             android:text="Keep me sign in"
-            android:textColor="@color/semidarkbrown" />
-
+            android:textColor="@color/semidarkbrown"/>
         <androidx.cardview.widget.CardView
             android:id="@+id/buttonlogin1"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
             android:layout_marginStart="110dp"
-            android:backgroundTint="@color/semidarkbrown"
-            app:cardCornerRadius="5dp">
-
+            app:cardCornerRadius="5dp"
+            android:layout_gravity="right"
+            android:backgroundTint="@color/semidarkbrown">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="5dp"
-                android:fontFamily="@font/poppinssemibold"
-                android:padding="10dp"
                 android:text="Login"
+                android:textSize="16dp"
+                android:padding="10dp"
                 android:textColor="@color/white"
-                android:textSize="16dp" />
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/poppinssemibold"/>
 
         </androidx.cardview.widget.CardView>
     </LinearLayout>
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="20dp"
         android:drawableLeft="@drawable/stroke"
-        android:gravity="center"
         android:paddingLeft="25dp"
-        android:paddingTop="20dp" />
-
+        android:gravity="center"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:paddingTop="20dp"
         android:paddingLeft="30dp"
-        android:paddingTop="20dp">
-
+        android:orientation="horizontal">
         <ImageView
             android:id="@+id/imgbuttongoogle1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="98dp"
-            android:src="@drawable/googlelogo" />
-
+            android:src="@drawable/googlelogo"/>
         <ImageView
             android:id="@+id/imgbuttonfacebook1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:src="@drawable/facebooklogo" />
+            android:src="@drawable/facebooklogo"/>
 
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:orientation="horizontal"
-        android:paddingTop="30dp">
+        android:paddingTop="30dp"
+        android:layout_gravity="center_horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppinsmedium"
             android:text="Doesn't have an account? "
-            android:textSize="15sp" />
-
+            android:textSize="15sp"
+            android:fontFamily="@font/poppinsmedium"/>
         <TextView
             android:id="@+id/signuptext1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppinsmedium"
             android:text="Sign up"
-            android:textColor="@color/semidarkbrown" />
+            android:textColor="@color/semidarkbrown"
+            android:fontFamily="@font/poppinsmedium"/>
     </LinearLayout>
 
 
