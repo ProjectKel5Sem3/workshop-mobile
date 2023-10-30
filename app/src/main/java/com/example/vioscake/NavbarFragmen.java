@@ -31,9 +31,9 @@ public class NavbarFragmen extends AppCompatActivity {
             if (item.getItemId() == R.id.navigation_home) {
                 fragment = new Home();
             } else if (item.getItemId() == R.id.navigation_katalog) {
-                fragment = new ();
+                fragment = new Katalog();
             } else if (item.getItemId() == R.id.navigation_notifications) {
-                fragment = new ();
+                fragment = new Notifications();
             } else if (item.getItemId() == R.id.navigation_account) {
                 fragment = new Profile();
             }
