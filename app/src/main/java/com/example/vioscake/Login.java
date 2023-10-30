@@ -33,13 +33,13 @@ public class Login extends AppCompatActivity {
                     if (username.getText().toString().equals("user") &&
                             password.getText().toString().equals("1234")) {
                         Toast.makeText(getApplicationContext(), "Login Successful!", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(Login.this, dashboard.class);
+                        Intent intent = new Intent(Login.this, Home.class);
                         startActivity(intent);
                         finish();
                     } else if (username.getText().toString().equals("admin") &&
                             password.getText().toString().equals("1231")){
                         Toast.makeText(getApplicationContext(), "Login sebagai Admin", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(Login.this, dashboard.class);
+                        Intent intent = new Intent(Login.this, Home.class);
                         startActivity(intent);
                         finish();
                     } else {
