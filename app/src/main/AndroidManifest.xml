@@ -25,9 +25,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login"/>
-        <activity android:name=".Register"/>
-        <activity android:name=".NavbarFragmen"/>
+        <activity android:name=".Login"
+            android:exported="false"/>
+        <activity android:name=".Register"
+            android:exported="false"/>
+        <activity android:name=".NavbarFragment"
+            android:exported="false"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+        </activity>
 
     </application>
 
