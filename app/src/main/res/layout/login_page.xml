@@ -180,6 +180,7 @@
             android:text="Doesn't have an account? "
             android:textSize="15sp"
             android:fontFamily="@font/poppinsmedium"/>
+
         <TextView
             android:id="@+id/signuptext1"
             android:layout_width="wrap_content"
