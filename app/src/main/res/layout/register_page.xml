@@ -3,8 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/lightbrown"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".EntryPackage.Register">
 
     <LinearLayout
         android:id="@+id/linearregister1"
@@ -52,7 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:text="Registrasi"
+                android:text="Registrasi Akun"
                 android:fontFamily="@font/poppinsmedium"
                 android:textColor="@color/lightbrown"
                 android:textStyle="bold"/>
@@ -76,21 +78,36 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"/>
 
-            <EditText
-                android:id="@+id/password2"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/custom_edittext"
-                android:layout_marginTop="5dp"
-                android:inputType="textPassword"
-                android:hint="Password"
-                android:fontFamily="@font/poppinsmedium"
-                android:paddingLeft="12dp"
-                android:paddingRight="8dp"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                android:drawablePadding="10dp"
-                android:drawableLeft="@drawable/lockicon"/>
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/password2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textPassword"
+                    android:hint="Password"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/lockicon"/>
+
+                <ImageView
+                    android:id="@+id/toggleeyeregister1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/eye"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="175dp"/>
+
+            </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
@@ -99,28 +116,43 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"/>
 
-            <EditText
-                android:id="@+id/passwordconfirm"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/custom_edittext"
-                android:layout_marginTop="5dp"
-                android:inputType="textPassword"
-                android:hint="Confirm Password"
-                android:fontFamily="@font/poppinsmedium"
-                android:paddingLeft="12dp"
-                android:paddingRight="8dp"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
-                android:drawablePadding="10dp"
-                android:drawableLeft="@drawable/lockicon"/>
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/passwordconfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edittext"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textPassword"
+                    android:hint="Confirm Password"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/lockicon"/>
+
+                <ImageView
+                    android:id="@+id/toggleeyeregister2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/eye"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="97dp"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
     
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardviewrefister2"
+        android:id="@+id/buttonregister1"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/cardviewregister1"
@@ -146,7 +178,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="20dp"
-        android:layout_below="@id/cardviewrefister2"
+        android:layout_below="@id/buttonregister1"
         android:drawableLeft="@drawable/strokesignup"
         android:paddingLeft="32dp"
         android:gravity="center"/>

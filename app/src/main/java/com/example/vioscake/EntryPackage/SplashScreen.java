@@ -1,9 +1,11 @@
-package com.example.vioscake;
+package com.example.vioscake.EntryPackage;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.vioscake.R;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -17,7 +19,7 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent mainIntent = new Intent(SplashScreen.this, MainActivity.class);
+                Intent mainIntent = new Intent(SplashScreen.this, Login.class);
                 startActivity(mainIntent);
                 finish();
             }

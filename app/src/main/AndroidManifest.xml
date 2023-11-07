@@ -17,7 +17,7 @@
         android:theme="@style/Theme.ViosCake"
         tools:targetApi="31">
         <activity
-            android:name=".SplashScreen"
+            android:name=".EntryPackage.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,11 +25,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login"
-            android:exported="false"/>
-        <activity android:name=".Register"
+        <activity android:name=".EntryPackage.Login"
+            android:exported="true"/>
+        <activity android:name=".EntryPackage.Register"
             android:exported="false"/>
         <activity android:name=".NavbarFragment"
+            android:exported="false"/>
+        <activity android:name=".EntryPackage.ForgetPassword"
             android:exported="false"/>
         <activity
             android:name=".MainActivity"

@@ -1,8 +1,10 @@
-package com.example.vioscake;
+package com.example.vioscake.EntryPackage;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.vioscake.R;
 
 public class Register extends AppCompatActivity {
     @Override
