@@ -26,11 +26,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".EntryPackage.Login"
-            android:exported="true"/>
+            android:exported="false"/>
         <activity android:name=".EntryPackage.Register"
             android:exported="false"/>
         <activity android:name=".NavbarFragment"
-            android:exported="false"/>
+            android:exported="false">
+        </activity>
         <activity android:name=".EntryPackage.ForgetPassword"
             android:exported="false"/>
         <activity

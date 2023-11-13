@@ -42,7 +42,7 @@ public class Login extends AppCompatActivity {
                     } else if (username.getText().toString().equals("admin") &&
                             password.getText().toString().equals("1231")){
                         Toast.makeText(getApplicationContext(), "Login sebagai Admin", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(Login.this, Home.class);
+                        Intent intent = new Intent(Login.this, NavbarFragment.class);
                         startActivity(intent);
                         finish();
                     } else {
