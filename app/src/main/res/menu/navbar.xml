@@ -11,7 +11,7 @@
     <item
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/notification_function_button"
-        android:title="Notifications" />
+        android:title="Pesanan" />
     <item
         android:id="@+id/navigation_account"
         android:icon="@drawable/profile_function_button"
