@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/lightbrown"
     android:orientation="vertical"
-    tools:context=".menuJenis">
+    tools:context=".MenuJenis2">
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,8 +22,9 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="350dp"
-        android:layout_height="520dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
+
         app:cardCornerRadius="5dp">
 
         <LinearLayout
@@ -37,16 +38,9 @@
                 android:fontFamily="@font/poppinsmedium"
                 android:paddingLeft="20dp"
                 android:paddingTop="20dp"
-                android:text="Pilih Size Cake"
+                android:text="Base Cake/Varian Rasa"
                 android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/arrow_right"
-                android:fontFamily="@font/poppinsmedium"
-                android:paddingLeft="25dp"
-                android:text="Bento Cake" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -58,30 +52,23 @@
                     android:layout_height="wrap_content">
 
                     <CheckBox
-                        android:id="@+id/size10"
+                        android:id="@+id/brownies"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="10cm" />
+                        android:text="Brownies" />
 
                 </RelativeLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/arrow_right"
-                    android:fontFamily="@font/poppinsmedium"
-                    android:paddingLeft="25dp"
-                    android:text="Birthday Cake" />
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
                     <CheckBox
-                        android:id="@+id/size12"
+                        android:id="@+id/blackforest"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="12cm" />
+                        android:text="Black Forest" />
 
                 </RelativeLayout>
 
@@ -90,10 +77,10 @@
                     android:layout_height="wrap_content">
 
                     <CheckBox
-                        android:id="@+id/size13"
+                        android:id="@+id/chocodevil"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="13cm" />
+                        android:text="Choco Devil" />
 
                 </RelativeLayout>
 
@@ -102,10 +89,10 @@
                     android:layout_height="wrap_content">
 
                     <CheckBox
-                        android:id="@+id/size15"
+                        android:id="@+id/bolupandan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="15cm" />
+                        android:text="Bolu Pandan" />
 
                 </RelativeLayout>
 
@@ -114,10 +101,10 @@
                     android:layout_height="wrap_content">
 
                     <CheckBox
-                        android:id="@+id/size17"
+                        android:id="@+id/bolumatcha"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="17cm" />
+                        android:text="Bolu Matcha" />
 
                 </RelativeLayout>
 
@@ -126,10 +113,10 @@
                     android:layout_height="wrap_content">
 
                     <CheckBox
-                        android:id="@+id/size19"
+                        android:id="@+id/boluredvelvet"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="19cm" />
+                        android:text="Bolu Red Velvet" />
 
                 </RelativeLayout>
 
@@ -138,10 +125,10 @@
                     android:layout_height="wrap_content">
 
                     <CheckBox
-                        android:id="@+id/size21"
+                        android:id="@+id/boluvanillakeju"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="21cm" />
+                        android:text="Bolu Vanilla Keju" />
 
                 </RelativeLayout>
 
@@ -150,10 +137,10 @@
                     android:layout_height="wrap_content">
 
                     <CheckBox
-                        android:id="@+id/size23"
+                        android:id="@+id/boluvanillastrawberry"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="23cm" />
+                        android:text="Bolu Vanilla Strawberry" />
 
                 </RelativeLayout>
 
@@ -162,10 +149,10 @@
                     android:layout_height="wrap_content">
 
                     <CheckBox
-                        android:id="@+id/size25"
+                        android:id="@+id/bolucheesecake"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="25cm" />
+                        android:text="Bolu Cheese Cake" />
 
                 </RelativeLayout>
 
@@ -195,7 +182,7 @@
                 android:fontFamily="@font/poppinsmedium"
                 android:paddingLeft="20dp"
                 android:paddingTop="10dp"
-                android:text="Masukkan Nama Anda"
+                android:text="Keterangan Lain (opsional)"
                 android:textStyle="bold" />
 
             <EditText
@@ -228,7 +215,7 @@
                 android:fontFamily="@font/poppinsmedium"
                 android:paddingLeft="20dp"
                 android:paddingTop="10dp"
-                android:text="Tambahan Topping"
+                android:text="Pesan Untuk Hari Apa"
                 android:textStyle="bold" />
 
             <EditText

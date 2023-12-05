@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/lightbrown"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".EditProfile">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +30,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/poppinsblack"
-            android:text="Edit Profile"
+            android:text="Settings"
             android:textSize="25sp" />
 
     </LinearLayout>
@@ -51,18 +52,49 @@
             android:orientation="vertical"
             android:padding="10dp">
 
+            <ImageView
+                android:id="@+id/fotoProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/profilegede" />
+
+            <TextView
+                android:id="@+id/ubahFotoBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Ubah Foto Profile"
+                android:textStyle="bold"
+                android:padding="15dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/lightbrown" />
+
+
             <TextView
                 android:id="@+id/EditUsr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
-                android:drawableRight="@drawable/arrowright"
-                android:drawablePadding="175dp"
+                android:drawableLeft="@drawable/profile1"
                 android:fontFamily="@font/poppinsmedium"
                 android:gravity="center"
                 android:text="Edit Username"
                 android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"/>
 
             <View
                 android:layout_width="match_parent"
@@ -78,15 +110,96 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="20dp"
-                android:drawableRight="@drawable/arrowright"
-                android:drawablePadding="167dp"
+                android:drawableLeft="@drawable/lock1"
+                android:drawablePadding="5dp"
                 android:fontFamily="@font/poppinsmedium"
                 android:gravity="center"
                 android:text="Ganti Password"
                 android:textStyle="bold" />
 
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/lightbrown" />
+
+            <TextView
+                android:id="@+id/editPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/telp"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:gravity="center"
+                android:text="Phone"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Telp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/lightbrown" />
+
+            <TextView
+                android:id="@+id/editAlamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/alamat"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:gravity="center"
+                android:text="Alamat"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"/>
+
 
         </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/buttonSave"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_marginStart="250dp"
+        android:backgroundTint="@color/semidarkbrown">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:textSize="16dp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppinssemibold"/>
+
     </androidx.cardview.widget.CardView>
 
 
